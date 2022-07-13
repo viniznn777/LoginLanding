@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../checkbox.css">
+    <link rel="stylesheet" href="signup.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="content">
+        <section class="left-section">
+            <div class="image"><img src="../images/Mobile login-rafiki.png" alt=""></div>
+            <div class="wrapper">
+                <div class="typing-demo">
+                    Cadastro de clientes!
+                </div>
+            </div>
+        </section>
+        <section class="right-section">
+            <div class="header">
+                <div class="have-account">
+                    <p>Já tem uma conta?</p>
+                </div>
+                <div class="register">
+                    <a href="../index.html"><button>Home</button></a>
+                </div>
+                <div class="checkbox">   
+                    <label class="switch">
+                        <input type="checkbox" id="checkbox">
+                        <span class="slider round"></span>
+                    </label><span id="Darkmode">&nbsp;Dark Mode</span>
+                </div>
+            </div>
+            <div class="content-right">
+                <div class="right-title">
+                    <h1 id="title">Olá! vamos criar sua conta?</h1>
+                </div>
+                <div class="right-subtitle">
+                    <h3>Coloque as informações nos campos abaixo<br>
+                        para realizar o seu cadastro.</h3>
+                </div>
+                <form onsubmit="submitForm(event)">
+                    <div class="email">
+                        <label for="email">Endereço de email válido</label>
+                        <input type="email" name="email" placeholder="Exampl@gmail.com" class="input" 
+                        required id="email">
+                    </div>
+                    <div class="password">
+                        <label for="password">Crie uma senha</label>
+                        <input type="password" name="password" placeholder="Enter password" class="input" required id="fpass" minlength="8">
+                    </div>
+                    <div class="password">
+                        <label for="password">Digite a senha novamente</label>
+                        <input type="password" name="password" placeholder="Enter password" class="input" required id="spass" minlength="8">
+                    </div>
+                    <div class="submit-form">
+                        <input type="submit" value="Começar agora" id="signup">
+                    </div>
+                </form>
+                <div class="role-div"><hr size="1px" width="212px">&nbsp;OU&nbsp;<hr size="1px" width="212px"></div>
+                <div class="google-login">
+                    <a href="#"><button id="button"><img src="../images/google.ico" alt="Google login" width="24px" height="24px" id="image-google">
+                    &nbsp; Login com Google</button></a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="../JavaScript.js"></script>
+    <script src="../Darkmode.js"></script>
+    <script src="validation_Password.js"></script>
+</body>
+</html>
