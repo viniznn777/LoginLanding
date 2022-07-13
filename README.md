@@ -1,4 +1,4 @@
-# Página de Login e cadastro de usúario com algumas validações
+# Página de Login e cadastro de usúario com algumas validações com JavaScript
 # Com responsividade 
 
 
