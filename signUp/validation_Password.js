@@ -15,6 +15,9 @@ startButton.addEventListener('click', () => {
     if (!firstPassword.value || !secondPassword.value || !emailUser.value) {
         window.alert('Preencha os campos abaixo!')
     }
+    else if (emailUser.value.indexOf('@') == -1 || emailUser.value.indexOf('.com') == -1) {
+        window.alert('Insira um email válido')
+    }
     else if (firstPassword.value.length < 8) {
         window.alert('Insira uma senha com 8 caracteres no mínimo')
     }
